@@ -1,1 +1,0 @@
-"./LED.obj" "./MISC.obj" "./SYSTEM.obj" "./USER.obj" "./main.obj" "../lnk_msp430fr5969.cmd" -l"libmath.a" -l"libc.a" 

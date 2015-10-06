@@ -7,11 +7,15 @@
  * MM/DD/YY
  * --------     ---------   ----------------------------------------------------
  * 10/04/15     3.0_DW0a    Initial project make.
+ * 							Added code to toggle the LEDs when the buttons
+ * 							 are pressed.
+ * 							Added timer functionality to debounce the switches.
+ *                                                                            */
 /******************************************************************************/
 
 /******************************************************************************/
 /* Contains main function.
- *
+ *                                                                            */
 /******************************************************************************/
 
 /******************************************************************************/
@@ -38,8 +42,6 @@
 
 int main (void)
 {
-    unsigned long i;
-
     WDTCTL = WDTPW | WDTHOLD;               // Stop watchdog timer
 
     /* Initialize */
@@ -47,11 +49,11 @@ int main (void)
     Init_App();
     Init_System();
 
+    LED_DisplayShow();
+
     while(1)
     {
-    	LED_GreenToggle();
-    	MSC_DelayUS(5000);
-
+    	SLEEP();
     }
 	return 0;
 }
