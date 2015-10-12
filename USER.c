@@ -55,12 +55,12 @@ const unsigned char Branch_Version[] = CPU_BRANCH;
 /******************************************************************************/
 void Init_App(void)
 {
-	/* initialize all ports as input */
-	P1DIR = 0;
-	P2DIR = 0;
-	P3DIR = 0;
-	P4DIR = 0;
-	PJDIR = 0;
+	/* initialize all ports as output */
+	P1DIR = 0xFF;
+	P2DIR = 0xFF;
+	P3DIR = 0xFF;
+	P4DIR = 0xFF;
+	PJDIR = 0xFF;
 
 	/*
 	 * Disable the GPIO power-on default high-impedance mode

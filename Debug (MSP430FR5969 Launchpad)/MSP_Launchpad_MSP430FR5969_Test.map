@@ -1,7 +1,7 @@
 ******************************************************************************
                   MSP430 Linker PC v4.4.5                      
 ******************************************************************************
->> Linked Tue Oct 06 16:34:40 2015
+>> Linked Mon Oct 12 10:39:00 2015
 
 OUTPUT FILE NAME:   <MSP_Launchpad_MSP430FR5969_Test.out>
 ENTRY POINT SYMBOL: "_c_int00_noargs_noexit_mpu"  address: 000044ac
@@ -79,7 +79,7 @@ MEMORY CONFIGURATION
   INT53                 0000fffa   00000002  00000002  00000000  RWIX
   INT54                 0000fffc   00000002  00000002  00000000  RWIX
   RESET                 0000fffe   00000002  00000002  00000000  RWIX
-  FRAM2                 00010000   00004000  00000b30  000034d0  RWIX
+  FRAM2                 00010000   00004000  00000b32  000034ce  RWIX
 
 
 SECTION ALLOCATION MAP
@@ -227,7 +227,7 @@ SYSNMI     0    0000fffc    00000002
 .reset     0    0000fffe    00000002     
                   0000fffe    00000002     rts430x_lc_rd_eabi.lib : boot.obj (.reset)
 
-.text      0    00010000    00000b30     
+.text      0    00010000    00000b32     
                   00010000    00000668     SYSTEM.obj (.text:SYS_CalculateClocks)
                   00010668    0000006c     rts430x_lc_rd_eabi.lib : autoinit_wdt.obj (.text:_auto_init_hold_wdt)
                   000106d4    00000068                            : copy_decompress_rle.obj (.text:__TI_decompress_rle_core)
@@ -236,34 +236,34 @@ SYSNMI     0    0000fffc    00000002
                   000107e4    0000004e     SYSTEM.obj (.text:SYS_ConfigureOscillator)
                   00010832    0000003e     LED.obj (.text:LED_DisplayShow)
                   00010870    0000003e     rts430x_lc_rd_eabi.lib : lsr32.obj (.text:l_lsr_const)
-                  000108ae    0000003a     USER.obj (.text:Init_App)
-                  000108e8    00000036     BUTTON.obj (.text:Init_Buttons)
-                  0001091e    00000036     TIMERS.obj (.text:Init_TimerA0)
-                  00010954    00000036     TIMERS.obj (.text:Init_TimerA1)
-                  0001098a    00000028     MSPMPU_INIT_LIB_CCS_msp430_large_code_restricted_data.lib : mpu_init.o (.text:__mpu_init)
-                  000109b2    00000024     BUTTON.obj (.text:BUT_Button1Interrupt)
-                  000109d6    00000022     LED.obj (.text:LED_Red)
-                  000109f8    00000020     BUTTON.obj (.text:BUT_Button2Interrupt)
-                  00010a18    00000020     MISC.obj (.text:MSC_DelayUS)
-                  00010a38    0000001e     main.obj (.text:main)
-                  00010a56    0000001c     LED.obj (.text:LED_Green)
-                  00010a72    0000001c     TIMERS.obj (.text:TMR_InterruptTimerA0)
-                  00010a8e    0000001c     TIMERS.obj (.text:TMR_InterruptTimerA1)
-                  00010aaa    00000014     rts430x_lc_rd_eabi.lib : memcpy.obj (.text:memcpy)
-                  00010abe    00000012                            : copy_decompress_none.obj (.text:decompress:none:__TI_decompress_none)
-                  00010ad0    00000010     USER.obj (.text:Init_System)
-                  00010ae0    0000000a     TIMERS.obj (.text:Init_Timers)
-                  00010aea    0000000a     SYSTEM.obj (.text:SYS_Sleep)
-                  00010af4    00000008     LED.obj (.text:LED_RedToggle)
-                  00010afc    00000008     SYSTEM.obj (.text:SYS_Unlock)
-                  00010b04    00000006     LED.obj (.text:LED_GreenToggle)
-                  00010b0a    00000006     TIMERS.obj (.text:TMR_ResetTimerA0)
-                  00010b10    00000006     TIMERS.obj (.text:TMR_ResetTimerA1)
-                  00010b16    00000006     TIMERS.obj (.text:TMR_SetTimerA0)
-                  00010b1c    00000006     TIMERS.obj (.text:TMR_SetTimerA1)
-                  00010b22    00000006     rts430x_lc_rd_eabi.lib : copy_decompress_rle.obj (.text:decompress:rle24:__TI_decompress_rle24)
-                  00010b28    00000004                            : pre_init.obj (.text:_system_pre_init)
-                  00010b2c    00000004                            : exit.obj (.text:abort)
+                  000108ae    0000003c     USER.obj (.text:Init_App)
+                  000108ea    00000036     BUTTON.obj (.text:Init_Buttons)
+                  00010920    00000036     TIMERS.obj (.text:Init_TimerA0)
+                  00010956    00000036     TIMERS.obj (.text:Init_TimerA1)
+                  0001098c    00000028     MSPMPU_INIT_LIB_CCS_msp430_large_code_restricted_data.lib : mpu_init.o (.text:__mpu_init)
+                  000109b4    00000024     BUTTON.obj (.text:BUT_Button1Interrupt)
+                  000109d8    00000022     LED.obj (.text:LED_Red)
+                  000109fa    00000020     BUTTON.obj (.text:BUT_Button2Interrupt)
+                  00010a1a    00000020     MISC.obj (.text:MSC_DelayUS)
+                  00010a3a    0000001e     main.obj (.text:main)
+                  00010a58    0000001c     LED.obj (.text:LED_Green)
+                  00010a74    0000001c     TIMERS.obj (.text:TMR_InterruptTimerA0)
+                  00010a90    0000001c     TIMERS.obj (.text:TMR_InterruptTimerA1)
+                  00010aac    00000014     rts430x_lc_rd_eabi.lib : memcpy.obj (.text:memcpy)
+                  00010ac0    00000012                            : copy_decompress_none.obj (.text:decompress:none:__TI_decompress_none)
+                  00010ad2    00000010     USER.obj (.text:Init_System)
+                  00010ae2    0000000a     TIMERS.obj (.text:Init_Timers)
+                  00010aec    0000000a     SYSTEM.obj (.text:SYS_Sleep)
+                  00010af6    00000008     LED.obj (.text:LED_RedToggle)
+                  00010afe    00000008     SYSTEM.obj (.text:SYS_Unlock)
+                  00010b06    00000006     LED.obj (.text:LED_GreenToggle)
+                  00010b0c    00000006     TIMERS.obj (.text:TMR_ResetTimerA0)
+                  00010b12    00000006     TIMERS.obj (.text:TMR_ResetTimerA1)
+                  00010b18    00000006     TIMERS.obj (.text:TMR_SetTimerA0)
+                  00010b1e    00000006     TIMERS.obj (.text:TMR_SetTimerA1)
+                  00010b24    00000006     rts430x_lc_rd_eabi.lib : copy_decompress_rle.obj (.text:decompress:rle24:__TI_decompress_rle24)
+                  00010b2a    00000004                            : pre_init.obj (.text:_system_pre_init)
+                  00010b2e    00000004                            : exit.obj (.text:abort)
 
 
 LINKER GENERATED COPY TABLES
@@ -541,9 +541,9 @@ address   name
 000009ce  AESAXIN_L                 
 000004be  BCD2BIN                   
 000004bc  BIN2BCD                   
-000109b2  BUT_Button1Interrupt      
-000109f8  BUT_Button2Interrupt      
-00010b2c  C$$EXIT                   
+000109b4  BUT_Button1Interrupt      
+000109fa  BUT_Button2Interrupt      
+00010b2e  C$$EXIT                   
 0000043e  CAPTIO0CTL                
 0000043f  CAPTIO0CTL_H              
 0000043e  CAPTIO0CTL_L              
@@ -661,16 +661,16 @@ address   name
 00000146  GCCTL1_L                  
 00001c20  HFXTCLK_Freq              
 000108ae  Init_App                  
-000108e8  Init_Buttons              
-00010ad0  Init_System               
-0001091e  Init_TimerA0              
-00010954  Init_TimerA1              
-00010ae0  Init_Timers               
+000108ea  Init_Buttons              
+00010ad2  Init_System               
+00010920  Init_TimerA0              
+00010956  Init_TimerA1              
+00010ae2  Init_Timers               
 00010832  LED_DisplayShow           
-00010a56  LED_Green                 
-00010b04  LED_GreenToggle           
-000109d6  LED_Red                   
-00010af4  LED_RedToggle             
+00010a58  LED_Green                 
+00010b06  LED_GreenToggle           
+000109d8  LED_Red                   
+00010af6  LED_RedToggle             
 00001c1c  LFMODCLK_Freq             
 00001c14  LFXTCLK_Freq              
 000004c4  MAC                       
@@ -738,7 +738,7 @@ address   name
 000004c2  MPYS_L                    
 000004c1  MPY_H                     
 000004c0  MPY_L                     
-00010a18  MSC_DelayUS               
+00010a1a  MSC_DelayUS               
 000004c8  OP2                       
 000004e2  OP2H                      
 000004e3  OP2H_H                    
@@ -941,8 +941,8 @@ address   name
 0000019a  SYSUNIV_L                 
 00010000  SYS_CalculateClocks       
 000107e4  SYS_ConfigureOscillator   
-00010aea  SYS_Sleep                 
-00010afc  SYS_Unlock                
+00010aec  SYS_Sleep                 
+00010afe  SYS_Unlock                
 00000352  TA0CCR0                   
 00000354  TA0CCR1                   
 00000356  TA0CCR2                   
@@ -997,14 +997,14 @@ address   name
 000003e0  TB0EX0                    
 000003ee  TB0IV                     
 000003d0  TB0R                      
-00010a72  TMR_InterruptTimerA0      
-00010a8e  TMR_InterruptTimerA1      
+00010a74  TMR_InterruptTimerA0      
+00010a90  TMR_InterruptTimerA1      
 0001073c  TMR_ModeTimerA0           
 00010790  TMR_ModeTimerA1           
-00010b0a  TMR_ResetTimerA0          
-00010b10  TMR_ResetTimerA1          
-00010b16  TMR_SetTimerA0            
-00010b1c  TMR_SetTimerA1            
+00010b0c  TMR_ResetTimerA0          
+00010b12  TMR_ResetTimerA1          
+00010b18  TMR_SetTimerA0            
+00010b1e  TMR_SetTimerA1            
 00004460  TimerA0_ISR               
 00004436  TimerA1_ISR               
 000005d0  UCA0ABCTL                 
@@ -1129,8 +1129,8 @@ address   name
 UNDEFED   __TI_INITARRAY_Base       
 UNDEFED   __TI_INITARRAY_Limit      
 000044ca  __TI_ISR_TRAP             
-00010abe  __TI_decompress_none      
-00010b22  __TI_decompress_rle24     
+00010ac0  __TI_decompress_none      
+00010b24  __TI_decompress_rle24     
 0000ffcc  __TI_int30                
 0000ffce  __TI_int31                
 0000ffd0  __TI_int32                
@@ -1159,7 +1159,7 @@ UNDEFED   __TI_INITARRAY_Limit
 ffffffff  __binit__                 
 ffffffff  __c_args__                
 00000001  __mpu_enable              
-0001098a  __mpu_init                
+0001098c  __mpu_init                
 000108a8  __mspabi_srll_1           
 00010884  __mspabi_srll_10          
 00010880  __mspabi_srll_11          
@@ -1179,14 +1179,14 @@ ffffffff  __c_args__
 000044ac  _c_int00_noargs_noexit_mpu
 0000fffe  _reset_vector             
 00002360  _stack                    
-00010b28  _system_pre_init          
-00010b2c  abort                     
+00010b2a  _system_pre_init          
+00010b2e  abort                     
 ffffffff  binit                     
 00004400  fram_ipe_end              
 00004400  fram_ipe_start            
 00004400  fram_rx_start             
-00010a38  main                      
-00010aaa  memcpy                    
+00010a3a  main                      
+00010aac  memcpy                    
 0000a501  mpu_ctl0_value            
 00001513  mpu_sam_value             
 00000440  mpu_segment_border1       
@@ -2072,34 +2072,34 @@ address   name
 000108a4  __mspabi_srll_2           
 000108a8  __mspabi_srll_1           
 000108ae  Init_App                  
-000108e8  Init_Buttons              
-0001091e  Init_TimerA0              
-00010954  Init_TimerA1              
-0001098a  __mpu_init                
-000109b2  BUT_Button1Interrupt      
-000109d6  LED_Red                   
-000109f8  BUT_Button2Interrupt      
-00010a18  MSC_DelayUS               
-00010a38  main                      
-00010a56  LED_Green                 
-00010a72  TMR_InterruptTimerA0      
-00010a8e  TMR_InterruptTimerA1      
-00010aaa  memcpy                    
-00010abe  __TI_decompress_none      
-00010ad0  Init_System               
-00010ae0  Init_Timers               
-00010aea  SYS_Sleep                 
-00010af4  LED_RedToggle             
-00010afc  SYS_Unlock                
-00010b04  LED_GreenToggle           
-00010b0a  TMR_ResetTimerA0          
-00010b10  TMR_ResetTimerA1          
-00010b16  TMR_SetTimerA0            
-00010b1c  TMR_SetTimerA1            
-00010b22  __TI_decompress_rle24     
-00010b28  _system_pre_init          
-00010b2c  C$$EXIT                   
-00010b2c  abort                     
+000108ea  Init_Buttons              
+00010920  Init_TimerA0              
+00010956  Init_TimerA1              
+0001098c  __mpu_init                
+000109b4  BUT_Button1Interrupt      
+000109d8  LED_Red                   
+000109fa  BUT_Button2Interrupt      
+00010a1a  MSC_DelayUS               
+00010a3a  main                      
+00010a58  LED_Green                 
+00010a74  TMR_InterruptTimerA0      
+00010a90  TMR_InterruptTimerA1      
+00010aac  memcpy                    
+00010ac0  __TI_decompress_none      
+00010ad2  Init_System               
+00010ae2  Init_Timers               
+00010aec  SYS_Sleep                 
+00010af6  LED_RedToggle             
+00010afe  SYS_Unlock                
+00010b06  LED_GreenToggle           
+00010b0c  TMR_ResetTimerA0          
+00010b12  TMR_ResetTimerA1          
+00010b18  TMR_SetTimerA0            
+00010b1e  TMR_SetTimerA1            
+00010b24  __TI_decompress_rle24     
+00010b2a  _system_pre_init          
+00010b2e  C$$EXIT                   
+00010b2e  abort                     
 ffffffff  __binit__                 
 ffffffff  __c_args__                
 ffffffff  binit                     

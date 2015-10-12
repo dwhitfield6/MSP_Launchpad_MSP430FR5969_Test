@@ -6,10 +6,11 @@
  * Date         Revision    Comments
  * MM/DD/YY
  * --------     ---------   ----------------------------------------------------
- * 10/04/15     3.0_DW0a    Initial project make.
+ * 10/12/15     3.0_DW0a    Initial project make.
  * 							Added code to toggle the LEDs when the buttons
  * 							 are pressed.
  * 							Added timer functionality to debounce the switches.
+ * 							Initialize pins as output to save power.
  *                                                                            */
 /******************************************************************************/
 
