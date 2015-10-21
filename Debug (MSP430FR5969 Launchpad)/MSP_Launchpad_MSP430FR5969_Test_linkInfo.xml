@@ -2,7 +2,7 @@
 <link_info>
    <banner>MSP430 Linker PC v4.4.5</banner>
    <copyright>Copyright (c) 2003-2015 Texas Instruments Incorporated</copyright>
-   <link_time>0x561bf034</link_time>
+   <link_time>0x5627e431</link_time>
    <link_errors>0x0</link_errors>
    <output_file>MSP_Launchpad_MSP430FR5969_Test.out</output_file>
    <entry_point>

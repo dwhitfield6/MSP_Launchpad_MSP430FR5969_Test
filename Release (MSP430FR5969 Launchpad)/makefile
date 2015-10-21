@@ -145,7 +145,7 @@ all: MSP_Launchpad_MSP430FR5969_Test.out
 MSP_Launchpad_MSP430FR5969_Test.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MSP430 Linker'
-	"C:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.5/bin/cl430" -vmspx --abi=eabi --data_model=restricted -O2 --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR5969__ --define=_MPU_ENABLE --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --printf_support=minimal -z -m"MSP_Launchpad_MSP430FR5969_Test.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccsv6/ccs_base/msp430/include" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.5/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.5/include" -i"C:/ti/ccsv6/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccsv6/ccs_base/msp430/lib/FR59xx" --reread_libs --priority --define=_MPU_ENABLE --warn_sections --display_error_number --diag_suppress=#9-D --diag_wrap=off --xml_link_info="MSP_Launchpad_MSP430FR5969_Test_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "MSP_Launchpad_MSP430FR5969_Test.out" $(ORDERED_OBJS)
+	"C:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.5/bin/cl430" -vmspx --abi=eabi --data_model=restricted -O2 --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR5969__ --define=_MPU_ENABLE --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --printf_support=minimal -z -m"MSP_Launchpad_MSP430FR5969_Test.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccsv6/ccs_base/msp430/include" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.5/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.5/include" -i"C:/ti/ccsv6/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccsv6/ccs_base/msp430/lib/FR59xx" --reread_libs --priority --define=_MPU_ENABLE --warn_sections --diag_wrap=off --display_error_number --diag_suppress=#9-D --xml_link_info="MSP_Launchpad_MSP430FR5969_Test_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "MSP_Launchpad_MSP430FR5969_Test.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -158,8 +158,7 @@ MSP_Launchpad_MSP430FR5969_Test.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)$(BIN_OUTPUTS__QUOTED)
-	-$(RM) "INTERRUPTS.pp" "LED.pp" "MISC.pp" "SYSTEM.pp" "TIMERS.pp" "USER.pp" "main.pp" 
-	-$(RM) "BUTTON.pp" 
+	-$(RM) "BUTTON.pp" "INTERRUPTS.pp" "LED.pp" "MISC.pp" "SYSTEM.pp" "TIMERS.pp" "USER.pp" "main.pp" 
 	-$(RM) "BUTTON.obj" "INTERRUPTS.obj" "LED.obj" "MISC.obj" "SYSTEM.obj" "TIMERS.obj" "USER.obj" "main.obj" 
 	-@echo 'Finished clean'
 	-@echo ' '

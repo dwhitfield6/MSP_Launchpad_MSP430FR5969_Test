@@ -6,6 +6,7 @@
  * Date         Revision    Comments
  * MM/DD/YY
  * --------     ---------   ----------------------------------------------------
+ * 10/21/15     3.0_DW0b    Changed version to continue developement.
  * 10/12/15     3.0_DW0a    Initial project make.
  * 							Added code to toggle the LEDs when the buttons
  * 							 are pressed.

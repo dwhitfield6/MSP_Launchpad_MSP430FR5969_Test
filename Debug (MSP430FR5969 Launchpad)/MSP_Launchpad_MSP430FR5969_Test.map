@@ -1,7 +1,7 @@
 ******************************************************************************
                   MSP430 Linker PC v4.4.5                      
 ******************************************************************************
->> Linked Mon Oct 12 10:39:00 2015
+>> Linked Wed Oct 21 12:14:57 2015
 
 OUTPUT FILE NAME:   <MSP_Launchpad_MSP430FR5969_Test.out>
 ENTRY POINT SYMBOL: "_c_int00_noargs_noexit_mpu"  address: 000044ac
